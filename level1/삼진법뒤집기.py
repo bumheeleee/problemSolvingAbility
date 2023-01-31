@@ -15,8 +15,8 @@
 def make_three(num):
     lists = []
     
-    if num == 1:
-        return [1]
+    if num <= 2:
+        return [num]
     
     while num > 2:
         remain = num % 3
