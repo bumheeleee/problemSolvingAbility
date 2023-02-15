@@ -130,11 +130,9 @@ def solution(cnt):
             row = bomb_location[i][0]
             col = bomb_location[i][1] 
             nums = permutaion[i]
-            print(f"row, col, nums = {row} {col} {nums}")
             bomb(arr, row, col, nums)            
             
         result.append(cnt_arr_bomb(arr))
-        print()
         return
 
     for i in range(1, 4):
